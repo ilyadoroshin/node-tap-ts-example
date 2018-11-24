@@ -4,7 +4,7 @@
   "functions": 50,
   "branches": 50,
   "exclude": [
-    "src/**/*.d.ts"
+    "**/*.d.ts"
   ],
   "include": [
     "src/**/*.ts",
