@@ -1,0 +1,17 @@
+{
+  "name": "node-tap-ts-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "nyc": "^13.1.0",
+    "source-map-support": "^0.5.9",
+    "tap": "ilyadoroshin/node-tap",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  },
+  "scripts": {
+    "coverage": "TS_NODE_CACHE=false TS_NODE_PROJECT=tsconfig.json ./node_modules/.bin/tap --ts --no-browser --coverage --coverage-report=html --reporter=spec src/**/*.test.ts",
+    "test": "TS_NODE_CACHE=false TS_NODE_PROJECT=tsconfig.json ./node_modules/.bin/tap --ts --reporter=spec src/**/*.test.ts"
+  }
+}
